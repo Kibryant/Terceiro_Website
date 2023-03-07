@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@keyframes subir {
+    0%{
+        top: 0%;
+
+    } 
+    100% {
+        top: -50%;
+
+    }
+}
+@font-face {
+    font-family: 'Superman';
+    src: url('Astronomus.ttf') format('truetype');
+}
+:root {
+    --cor0: #F22233;
+    --cor1: #0511F2;
+    --cor2: #A62424;
+    --cor3: #0D0D0D;
+    --cor4: #FFEB00;
+}
+.logo {
+    padding-top: 50px;
+    max-width: 600px;
+}
+body {
+
+    text-align: justify;
+    font-family: 'Superman';
+    color: var(--cor3);
+    background: url(fotos/LogoSuperman.png) top left no-repeat fixed;
+    background-color: #1EA9C4;
+    display: block;
+    
+} 
+header {
+    margin: auto;
+    text-align: center;
+    font-family: 'Superman';
+    font-size: 2em;
+}
+header nav {
+    position: relative;
+    top: -300px;
+    text-align: right;
+}
+header nav a{
+    margin-right: 20px;
+    color: var(--cor3);
+    text-decoration: none;
+    
+
+    
+} 
+nav a:hover {
+    transition: .5s;
+    position: relative;
+    animation-name: subir;
+    animation-duration: 1s;
+    color: var(--cor0);
+}
+
+main h2{
+    font-size: 2em;
+    text-align: center;
+
+}
+main p {
+    text-align: justify;
+    margin: auto;
+    min-width: 430px;
+    max-width: 900px;
+    text-indent: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    font-family: sans-serif;
+    width: auto;
+}
+aside h1 {
+    text-decoration: underline;
+    font-size: 2.5em;
+    text-align: center;
+}
+.prime {
+    color: var(--cor4);
+}
+.foto_prime {
+    display: block;
+    margin:auto;
+    padding-bottom: 10px;
+}
+.comunista {
+    color: var(--cor0);
+}
+.superman_comunista {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
